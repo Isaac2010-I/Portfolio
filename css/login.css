@@ -1,128 +1,160 @@
 
-/* General Reset */
+/* ===== Global Styles ===== */
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     min-height: 100vh;
-    background-color: blue;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    background-color: #26752B;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
 }
 
-/* Main Container */
+
+/* ===== Main Login Card ===== */
+
 .main {
     display: flex;
     width: 100%;
     max-width: 1100px;
     min-height: 650px;
-    margin: auto;
+    background-color: white;
     border-radius: 30px;
     overflow: hidden;
-    background-color: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 
-/* Left Image Section */
+
+/* ===== Left Image Panel ===== */
+
 .picture {
-    width: 55%;
-    background: url("7270a06224fb5468e7ab40c8530eb657.jpg")
-    center / cover no-repeat;
+    width: 50%;
+    min-height: 650px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
+    justify-content: center;
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("7270a06224fb5468e7ab40c8530eb657.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.picture-content {
     padding: 30px;
+    text-align: center;
+    color: white;
 }
 
 .Welcome {
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
 }
 
 .website {
-    margin-top: 20px;
     font-size: 1.1rem;
-    letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
-/* Right Login Section */
+
+/* ===== Right Login Panel ===== */
+
 .page {
-    width: 45%;
-    background-color: white;
-    padding: 45px 35px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 55px clamp(25px, 5vw, 65px);
+    background-color: white;
 }
 
-/* Headings */
-.hello,
-.good {
-    color: blue;
-    font-size: 1.2rem;
+.page-header {
+    margin-bottom: 35px;
 }
 
 .hello {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #26752B;
+    margin-bottom: 5px;
 }
 
 .good {
+    font-size: 1rem;
+    color: #777;
     margin-bottom: 35px;
 }
 
 .login {
-    color: blue;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 35px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
 }
 
-/* Form Fields */
+
+/* ===== Form Fields ===== */
+
 .information {
     width: 100%;
 }
 
-.email,
-.password {
+.form-group {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input.email,
+input.password {
     display: block;
     width: 100%;
-    padding: 12px 5px;
-    margin-bottom: 35px;
+    padding: 15px 5px;
     border: none;
-    border-bottom: 3px solid blue;
+    border-bottom: 2px solid #ccc;
     outline: none;
-    font: inherit;
+    background-color: transparent;
+    color: #222;
     font-size: 1rem;
-    background: transparent;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
 }
 
-.email:focus,
-.password:focus {
-    border-bottom-color: darkblue;
+input.email:focus,
+input.password:focus {
+    border-bottom-color: #26752B;
 }
 
-/* Remember Me and Forgot Password */
-.options {
+input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+
+/* ===== Remember Me & Forgot Password ===== */
+
+.login-options {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
-    margin: 5px 0 30px;
+    margin: 10px 0 30px;
 }
 
 .remember {
@@ -134,79 +166,157 @@ body {
 .checkbox {
     width: 16px;
     height: 16px;
-    accent-color: blue;
+    accent-color: #26752B;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .check {
     font-size: 0.85rem;
-    color: #333;
+    color: #555;
     cursor: pointer;
 }
 
 .forgot {
-    color: blue;
     font-size: 0.85rem;
+    color: #26752B;
     text-decoration: none;
 }
 
-.forgot:hover {
+.forgot:hover,
+.create:hover {
     text-decoration: underline;
 }
 
-/* Submit Button */
+
+/* ===== Submit Button ===== */
+
 button {
     display: block;
     width: 100%;
-    padding: 14px;
+    padding: 15px;
     border: none;
-    border-radius: 6px;
-    background-color: blue;
+    border-radius: 8px;
+    background-color: #26752B;
     color: white;
-    font: inherit;
-    font-weight: bold;
+    font-family: inherit;
     font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
 }
 
 button:hover {
-    background-color: darkblue;
+    background-color: #1d5b21;
+    transform: translateY(-2px);
 }
 
-/* Create Account */
-.create {
-    margin-top: 30px;
+button:active {
+    transform: translateY(0);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid #26752B;
+    outline-offset: 3px;
+}
+
+
+/* ===== Create Account ===== */
+
+.signup-text {
+    margin-top: 25px;
     text-align: center;
-    color: #333;
     font-size: 0.9rem;
+    line-height: 1.8;
+    color: #666;
 }
 
-.create a {
-    color: blue;
-    font-weight: bold;
+.create {
+    color: #26752B;
+    font-weight: 700;
     text-decoration: none;
 }
 
-.create a:hover {
-    text-decoration: underline;
+
+/* ===== Accessible Hidden Labels ===== */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
-/* Tablet and Mobile */
-@media (max-width: 768px) {
+
+/* ===== Tablet Layout ===== */
+
+@media (max-width: 850px) {
+    .main {
+        max-width: 650px;
+        min-height: 600px;
+    }
+
+    .picture {
+        width: 40%;
+        min-height: 600px;
+    }
+
+    .page {
+        width: 60%;
+        padding: 40px 30px;
+    }
+
+    .Welcome {
+        font-size: 2.3rem;
+    }
+
+    .website {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ===== Mobile Layout ===== */
+
+@media (max-width: 600px) {
     body {
-        padding: 20px;
+        padding: 20px 12px;
     }
 
     .main {
-        max-width: 500px;
-        min-height: auto;
         flex-direction: column;
+        max-width: 450px;
+        min-height: auto;
+        border-radius: 20px;
     }
 
     .picture {
         width: 100%;
-        min-height: 220px;
+        min-height: 180px;
+        border-radius: 0;
+        background-position: center 45%;
+    }
+
+    .picture-content {
+        padding: 25px 15px;
+    }
+
+    .Welcome {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    .website {
+        font-size: 0.9rem;
     }
 
     .page {
@@ -214,27 +324,23 @@ button:hover {
         padding: 35px 25px;
     }
 
-    .Welcome {
+    .page-header {
+        margin-bottom: 30px;
+    }
+
+    .hello {
         font-size: 2rem;
     }
 
-    .website {
-        font-size: 0.9rem;
-        margin-top: 12px;
-    }
-}
-
-@media (max-width: 400px) {
-    body {
-        padding: 10px;
+    .good {
+        margin-bottom: 25px;
     }
 
-    .page {
-        padding: 25px 18px;
+    .login {
+        font-size: 1.2rem;
     }
 
-    .options {
+    .login-options {
         align-items: flex-start;
-        flex-direction: column;
     }
 }

@@ -1,36 +1,114 @@
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="css/login.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="picture">
-        <div class="Welcome">Welcome Page</div>
-        <div class="website">WWW.YOURSITE.COM</div>
-      </div>
-      <div class="page">
-        <div class="hello">Hello!</div>
-        <div class="good">Good Morning</div>
-        <div class="login">Login Your Account</div>
-        <div class="information">
-          <form action="">
-            <input type="email" placeholder="Email Address" class="email" />
-            <br />
-            <input type="password" placeholder="Password" class="password" />
-            <input id="checkbox" type="checkbox" class="checkbox" />
-            <label for="checkbox" class="check">Remember Me</label>
-            <label for="" class="forgot">Forgot Password?</label>
-            
-            <button>SUBMIT</button>
-            
-          </form>
-        </div>
-        <div class="create">Create Account</div>
-      </div>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page | Welcome Back</title>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <!-- Left Image Panel -->
+        <section class="picture">
+            <div class="picture-content">
+                <h1 class="Welcome">LOGIN</h1>
+                <p class="website">Welcome back to your account.</p>
+            </div>
+        </section>
+
+        <!-- Right Login Panel -->
+        <section class="page">
+
+            <header class="page-header">
+                <h2 class="hello">Hello!</h2>
+                <p class="good">Good Morning</p>
+                <h3 class="login">Login Your Account</h3>
+            </header>
+
+            <div class="information">
+
+                <form action="#" method="post">
+
+                    <!-- Email Address -->
+                    <div class="form-group">
+                        <label for="email" class="visually-hidden">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email Address"
+                            class="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password" class="visually-hidden">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            class="password"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </div>
+
+                    <!-- Login Options -->
+                    <div class="login-options">
+
+                        <div class="remember">
+                            <input
+                                id="checkbox"
+                                type="checkbox"
+                                name="remember"
+                                class="checkbox"
+                            >
+
+                            <label for="checkbox" class="check">
+                                Remember Me
+                            </label>
+                        </div>
+
+                        <a href="forgot-password.html" class="forgot">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit">SUBMIT</button>
+
+                    <!-- Signup Link -->
+                    <p class="signup-text">
+                        Don't have an account?
+                        <a href="signup.html" class="create">
+                            Create Account
+                        </a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
 </html>
