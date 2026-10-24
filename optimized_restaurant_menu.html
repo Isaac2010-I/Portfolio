@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore our restaurant menu, featuring starters, salads, burgers, main courses, pasta, pizza, desserts and beverages.">
+    <title>Restaurant Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <main class="menu-wrapper">
+        <header class="text-center mb-4">
+            <div class="row align-items-center mb-2">
+                <div class="col-4">
+                    <p class="tagline mb-0">Good Food<br>Good Mood ♡</p>
+                </div>
+                <div class="col-4">
+                    <div class="restaurant-icon" aria-hidden="true">♨</div>
+                    <h1 class="restaurant-name">RESTAURANT</h1>
+                </div>
+                <div class="col-4">
+                    <p class="tagline mb-0">Eat Drink<br>Be Happy ♡</p>
+                </div>
+            </div>
+            <p class="menu-title">Menu</p>
+            <p class="subtitle">FRESH &nbsp; • &nbsp; TASTY &nbsp; • &nbsp; ALWAYS</p>
+        </header>
+
+        <div class="row g-3">
+            <!-- Starters -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="starters-title">
+                    <h2 class="category-title" id="starters-title"><span class="category-icon" aria-hidden="true">♨</span>Starters</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Garlic Bread</span><span class="price">$5.50</span></div><p class="item-description">Freshly baked bread with garlic butter</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Mozzarella Sticks</span><span class="price">$7.50</span></div><p class="item-description">Crispy mozzarella with marinara sauce</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Chicken Wings</span><span class="price">$8.50</span></div><p class="item-description">Choice of BBQ, buffalo or garlic parmesan</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Bruschetta</span><span class="price">$6.50</span></div><p class="item-description">Toasted bread, tomatoes, basil and olive oil</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=700&q=80" alt="Crispy restaurant starters" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Salads -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="salads-title">
+                    <h2 class="category-title" id="salads-title"><span class="category-icon" aria-hidden="true">❧</span>Salads</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Caesar Salad</span><span class="price">$8.50</span></div><p class="item-description">Romaine lettuce, parmesan, croutons and Caesar dressing</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Greek Salad</span><span class="price">$9.50</span></div><p class="item-description">Tomatoes, cucumbers, red onion, olives and feta</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>House Salad</span><span class="price">$7.50</span></div><p class="item-description">Mixed greens, cherry tomatoes, cucumber and vinaigrette</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Fresh green salad" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Burgers -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="burgers-title">
+                    <h2 class="category-title" id="burgers-title"><span class="category-icon" aria-hidden="true">☰</span>Burgers</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Classic Burger</span><span class="price">$11.50</span></div><p class="item-description">Beef patty, lettuce, tomato, onion and special sauce</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Cheeseburger</span><span class="price">$12.50</span></div><p class="item-description">Beef patty, cheddar cheese, lettuce and tomato</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>BBQ Burger</span><span class="price">$13.50</span></div><p class="item-description">Beef patty, bacon, cheddar and BBQ sauce</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Veggie Burger</span><span class="price">$10.50</span></div><p class="item-description">Grilled veggie patty, lettuce, tomato and onion</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Cheeseburger" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="mains-title">
+                    <h2 class="category-title" id="mains-title"><span class="category-icon" aria-hidden="true">♨</span>Main Courses</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Grilled Chicken Breast</span><span class="price">$14.50</span></div><p class="item-description">Served with vegetables and mashed potatoes</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Beef Steak</span><span class="price">$18.50</span></div><p class="item-description">With seasonal vegetables and fries</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Salmon Fillet</span><span class="price">$17.50</span></div><p class="item-description">With lemon butter sauce and roasted vegetables</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Lasagna</span><span class="price">$13.50</span></div><p class="item-description">Layers of pasta, meat sauce and cheese</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80" alt="Grilled chicken meal" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Pasta -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="pasta-title">
+                    <h2 class="category-title" id="pasta-title"><span class="category-icon" aria-hidden="true">〽</span>Pasta</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Spaghetti Bolognese</span><span class="price">$12.50</span></div><p class="item-description">Classic meat sauce</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Penne Alfredo</span><span class="price">$13.50</span></div><p class="item-description">Creamy parmesan sauce</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Fettuccine Carbonara</span><span class="price">$14.50</span></div><p class="item-description">Bacon, egg, parmesan and cream</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Vegetable Pasta</span><span class="price">$11.50</span></div><p class="item-description">Seasonal vegetables and olive oil</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=80" alt="Creamy pasta" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Pizza -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="pizza-title">
+                    <h2 class="category-title" id="pizza-title"><span class="category-icon" aria-hidden="true">◉</span>Pizza</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Margherita</span><span class="price">$11.50</span></div><p class="item-description">Tomato sauce, mozzarella and basil</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Pepperoni</span><span class="price">$13.50</span></div><p class="item-description">Tomato sauce, mozzarella and pepperoni</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Supreme</span><span class="price">$15.50</span></div><p class="item-description">Mozzarella, pepperoni, mushrooms, peppers and olives</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Four Cheese</span><span class="price">$14.50</span></div><p class="item-description">Mozzarella, cheddar, parmesan and gorgonzola</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pepperoni pizza" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Desserts -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="desserts-title">
+                    <h2 class="category-title" id="desserts-title"><span class="category-icon" aria-hidden="true">♧</span>Desserts</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Chocolate Lava Cake</span><span class="price">$6.50</span></div><p class="item-description">Warm chocolate cake with vanilla ice cream</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Cheesecake</span><span class="price">$6.00</span></div><p class="item-description">Classic New York style</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Tiramisu</span><span class="price">$6.50</span></div><p class="item-description">Coffee, mascarpone and cocoa</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate dessert" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Beverages -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <section class="menu-card" aria-labelledby="beverages-title">
+                    <h2 class="category-title" id="beverages-title"><span class="category-icon" aria-hidden="true">♜</span>Beverages</h2>
+                    <div class="menu-item"><div class="item-heading"><span>Soft Drinks</span><span class="price">$2.50</span></div><p class="item-description">Coke, Diet Coke, Sprite and Fanta</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Iced Tea</span><span class="price">$2.50</span></div><p class="item-description">Peach, lemon or original</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Fresh Orange Juice</span><span class="price">$3.50</span></div><p class="item-description">100% natural</p></div>
+                    <div class="menu-item"><div class="item-heading"><span>Coffee</span><span class="price">$2.00</span></div><p class="item-description">Regular or decaf</p></div>
+                    <img class="food-image" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Freshly prepared coffee" loading="lazy">
+                </section>
+            </div>
+
+            <!-- Thank-you panel -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <aside class="thank-you">
+                    <div class="thank-you-icon" aria-hidden="true">♨</div>
+                    <h2>Thank You<br>for Dining<br>With Us</h2>
+                    <p class="mt-4">GREAT FOOD<br>• GOOD PEOPLE •<br>• BETTER TOGETHER</p>
+                </aside>
+            </div>
+        </div>
+
+        <footer class="text-center mt-4">
+            <p class="footer-note">Bon Appétit</p>
+            <p class="small text-secondary mb-0">Thank you for choosing our restaurant!</p>
+        </footer>
+    </main>
+</body>
+</html>
